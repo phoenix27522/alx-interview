@@ -23,7 +23,7 @@ def makeChange(coins, total):
 
     # Iterate over all amounts from 1 to total
     for i in range(1, total + 1):
-        # Try each coin to see if it can contribute to the minimum number of coins
+        # Try each coin to see if it can contribute minimum number of coins
         for coin in coins:
             if coin <= i:
                 subres = table[i - coin]
